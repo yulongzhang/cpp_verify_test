@@ -103,3 +103,26 @@ string test12() {
 	item = v.back();
 	return "test12";
 }
+
+class mbzylqn {
+public:
+    mbzylqn();
+    int a;
+    int b;
+    int c;
+};
+
+mbzylqn::mbzylqn(){
+    memset(&a,
+           1,
+           static_cast<size_t>(
+               reinterpret_cast<char*>(&b) -
+                   reinterpret_cast<char*>(&a) +
+                   sizeof(b))
+          );
+}
+
+int test13(){
+    mbzylqn yy;
+    printf("%08X\n", yy.a);
+}
