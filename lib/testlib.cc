@@ -27,3 +27,25 @@ string test4() {
 	string str(v.begin(), v.end());
 	return str;
 }
+
+string test5() {
+	vector<char> v;
+	v.push_back('x');
+	v.push_back('x');
+	v.push_back('x');
+	v.push_back('x');
+	v.push_back('x');
+	char *s = "test5";
+	memcpy(&v[0], s, strlen(s));
+	string str(v.begin(), v.end());
+	return str;
+}
+
+vector<string> v_str;
+string test6(int index) {
+	v_str.push_back("xxx");
+	v_str.push_back("yyy");
+	v_str.push_back("zzz");
+	v_str.push_back("test6");
+	return v_str[index];
+}

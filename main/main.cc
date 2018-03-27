@@ -19,6 +19,13 @@ int main(int argc, char** argv) {
   string s4 = test4();
   cout << s4 << endl;
   
+  string s5 = test5();
+  cout << s5 << endl;
+
+  int index = 3;
+  string s6 = test6(index);
+  cout << s6 << endl;
+  
   cout << "end testing" << endl;
 
   return 0;
