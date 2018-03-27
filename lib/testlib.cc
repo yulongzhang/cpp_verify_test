@@ -126,3 +126,21 @@ string test13(){
     mbzylqn yy;
     return v_str[yy.a%0xFF];
 }
+
+string s_test14;
+void foo(){
+	for(int i=0; i<1000; i++)
+		s_test14 = "test14";
+}
+void bar(int x){
+	if(x%2==0)
+		for(int i=0; i<1000; i++)
+			s_test14 = "test14_r";
+}
+string test14() {
+	thread a(foo);
+	thread b(bar, rand());
+	a.join();
+	b.join();
+	return s_test14;
+}

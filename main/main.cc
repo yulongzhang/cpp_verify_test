@@ -1,11 +1,13 @@
 #include <iostream>
 #include <string>
+#include <time.h>
 #include "lib/testlib.h"
 
 using namespace std;
 
 int main(int argc, char** argv) {
   cout << "begin testing" << endl;
+  srand (time(NULL));
 
   string s1 = *test1();
   cout << s1 << endl;
@@ -26,7 +28,7 @@ int main(int argc, char** argv) {
   string s6 = test6(index);
   cout << s6 << endl;
   
-  index = rand();
+  index = rand()%8;
   string s7 = test7(index);
   cout << s7 << endl;
   
@@ -42,6 +44,8 @@ int main(int argc, char** argv) {
   cout << test12() << endl;
 
   cout << test13() << endl;
+
+  cout << test14() << endl;
   
   cout << "end testing" << endl;
 
