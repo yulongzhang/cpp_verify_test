@@ -5,3 +5,8 @@ package demo;
 message TestMsg {
   string str = 1;
 }
+
+message LaneWaypoint {
+  string name = 1;
+  string id = 2;
+}

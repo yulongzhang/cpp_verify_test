@@ -144,3 +144,25 @@ string test14() {
 	b.join();
 	return s_test14;
 }
+
+void initVector(vector<demo::LaneWaypoint> vec, int num) {
+  for (int i = 0; i < num; i++) {
+    if (i != num-1) {
+      demo::LaneWaypoint lane;
+      lane.set_name("lane");
+      lane.set_id("id");
+      vec.push_back(lane);
+    } else {
+      vec.push_back(demo::LaneWaypoint()); 
+    }
+  }
+}
+
+string test15() {
+  vector<demo::LaneWaypoint> vec;
+  initVector(vec, 10);	
+  demo::LaneWaypoint lane = vec.back(); 
+  cout << lane.id() << endl; 
+  return "test13";
+}
+

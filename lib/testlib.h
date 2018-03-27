@@ -17,3 +17,4 @@ string test11(int index);
 string test12();
 string test13();
 string test14();
+string test15();

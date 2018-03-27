@@ -47,6 +47,8 @@ int main(int argc, char** argv) {
 
   cout << test14() << endl;
   
+  cout << test13() << endl;
+
   cout << "end testing" << endl;
 
   return 0;
