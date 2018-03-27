@@ -30,6 +30,9 @@ int main(int argc, char** argv) {
   string s7 = test7(index);
   cout << s7 << endl;
   
+  string s8 = test8(index%5);
+  cout << s8 << endl;
+  
   cout << "end testing" << endl;
 
   return 0;

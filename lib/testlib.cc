@@ -54,3 +54,13 @@ string test7(int index) {
 	v_str.push_back("test7");
 	return v_str[index];
 }
+
+vector<int> v_index;
+string test8(int index) {
+	v_index.push_back(1);
+	v_index.push_back(2);
+	v_index.push_back(4);
+	v_index.push_back(3);
+	v_index.push_back(0);
+	return v_str[v_index[index]];
+}
