@@ -22,7 +22,7 @@ const string *test3() {
 string test4() {
 	vector<char> v;
 	v.push_back('1');
-	char *s = "test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4test4";
+	char *s = "test4";
 	memcpy(&v[0], s, strlen(s));
 	string str(v.begin(), v.end());
 	return str;
