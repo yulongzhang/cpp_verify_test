@@ -32,6 +32,10 @@ int main(int argc, char** argv) {
   
   string s8 = test8(index%5);
   cout << s8 << endl;
+
+  cout << test9() << endl;
+
+  cout << test10(rand()) << endl;
   
   cout << "end testing" << endl;
 

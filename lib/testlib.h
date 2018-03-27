@@ -10,3 +10,5 @@ string test5();
 string test6(int index);
 string test7(int index);
 string test8(int index);
+string test9();
+string test10(int index);

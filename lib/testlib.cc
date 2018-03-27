@@ -64,3 +64,22 @@ string test8(int index) {
 	v_index.push_back(0);
 	return v_str[v_index[index]];
 }
+
+string test9() {
+	auto *p = &v_str[0];
+	auto *q = &v_str[1];
+	p = q + 1;
+	memcpy(p, "test9", strlen("test9"));
+	return *p;
+}
+
+string test10(int i) {
+	int j=1;
+	while(i>0){
+		j = i*5+3;
+		if(j==43)
+			return v_str[90];
+		i--;
+	}
+	return "test10";
+}
