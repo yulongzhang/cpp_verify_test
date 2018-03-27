@@ -36,6 +36,10 @@ int main(int argc, char** argv) {
   cout << test9() << endl;
 
   cout << test10(rand()) << endl;
+
+  cout << test11(1) << endl;
+
+  cout << test12() << endl;
   
   cout << "end testing" << endl;
 

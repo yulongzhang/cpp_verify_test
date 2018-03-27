@@ -83,3 +83,23 @@ string test10(int i) {
 	}
 	return "test10";
 }
+
+string test11(int i) {
+	int j=1;
+	while(i>0){
+		j = i*5+3;
+		if(j==43)
+			return v_str[90];
+		i--;
+	}
+	return "test11";
+}
+
+string test12() {
+	vector<int> v;
+	v.push_back(1);
+	auto &item = v.back();
+	v.push_back(2);
+	item = v.back();
+	return "test12";
+}
