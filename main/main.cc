@@ -26,6 +26,10 @@ int main(int argc, char** argv) {
   string s6 = test6(index);
   cout << s6 << endl;
   
+  index = rand();
+  string s7 = test7(index);
+  cout << s7 << endl;
+  
   cout << "end testing" << endl;
 
   return 0;

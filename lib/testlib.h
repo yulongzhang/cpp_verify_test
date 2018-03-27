@@ -8,3 +8,4 @@ const string *test3();
 string test4();
 string test5();
 string test6(int index);
+string test7(int index);

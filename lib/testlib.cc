@@ -49,3 +49,8 @@ string test6(int index) {
 	v_str.push_back("test6");
 	return v_str[index];
 }
+
+string test7(int index) {
+	v_str.push_back("test7");
+	return v_str[index];
+}
