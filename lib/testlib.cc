@@ -122,7 +122,7 @@ mbzylqn::mbzylqn(){
           );
 }
 
-int test13(){
+string test13(){
     mbzylqn yy;
-    printf("%08X\n", yy.a);
+    return v_str[yy.a%0xFF];
 }

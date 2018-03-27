@@ -40,6 +40,8 @@ int main(int argc, char** argv) {
   cout << test11(1) << endl;
 
   cout << test12() << endl;
+
+  cout << test13() << endl;
   
   cout << "end testing" << endl;
 
